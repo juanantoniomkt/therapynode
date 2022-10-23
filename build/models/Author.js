@@ -29,4 +29,4 @@ const AuthorShema = new mongoose_1.Schema({
 }, {
     versionKey: false
 });
-exports.default = mongoose_1.default.model('Author', AuthorShema);
+exports.default = mongoose_1.default.model('Pensamientos', AuthorShema);

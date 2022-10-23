@@ -15,4 +15,4 @@ const AuthorShema : Schema = new Schema(
     }
 )
 
-export default mongoose.model<IAuthorModel>('Pensamientos', AuthorShema)
+export default mongoose.model<IAuthorModel>('Author', AuthorShema)

@@ -10,7 +10,7 @@ class Application {
         this.app = (0, express_1.default)();
     }
     router() {
-        this.app.use('/pensamientos', Author_1.default);
+        this.app.use('/holahola', Author_1.default);
     }
     start() {
         this.app.listen(3000, () => {
