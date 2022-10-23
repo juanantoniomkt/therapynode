@@ -11,7 +11,7 @@ class Application {
     }
 
     router() {
-        this.app.use('/pensamientos', authorRoutes)
+        this.app.use('/holahola', authorRoutes)
 
     }
     
