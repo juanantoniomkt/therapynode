@@ -1,22 +1,13 @@
-import express from 'express'
+import Application from './app';
+import database from './database'
 
-import diaryRouter from './routes/diaries'
 
-const app = express()
+database()
 
-app.use(express.json())
+const app = new Application();
 
-const PORT = 3000
+app.start()
 
-app.get('/ping', (_req, res: any) => {
-    console.log("hola");
-    res.send('pong carlos')
-    
-})
+app.router()
 
-app.use('/api/diaries', diaryRouter)
 
-app.listen(PORT, () => {
-    console.log("el serv");
-    
-})
