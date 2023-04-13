@@ -11,20 +11,15 @@ class Application {
     }
 
     router() {
-        this.app.use('/holahola', authorRoutes)
-
+        this.app.use('/holahola1', authorRoutes)
     }
     
     
     start() {
-
-
         this.app.listen(3000, () => {
             console.log("corriendo");
   
         })
-
-
     }
 }
 
